@@ -1,0 +1,15 @@
+get left() {
+        return this.left;
+    }
+
+    get top() {
+        return this.top;
+    }
+    
+    get width() {
+        return this.width;
+    }
+
+    get height() {
+        return this.height;
+    }

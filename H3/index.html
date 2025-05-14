@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maailman meteoriitit</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/Control.FullScreen.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #map {
+            height: 640px;
+            width: 1000px;
+            max-width: 95%;
+        }
+    </style>
+    
+
+    <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+    </script>
+    <script src="js/Control.FullScreen.js"></script>
+    <script src="https://kit.fontawesome.com/5f3520df6b.js" crossorigin="anonymous"></script>
+     
+</head>
+
+<body>
+<h1>Maailman meteoriitit</h1>
+
+
+<button id="openBox">LUE LISÄÄ</button>
+
+    <div id="popupBox">
+        <h2>Meteoriitit</h2>
+
+        <p>Alla olevalla kartalla on esitetty maapallolle pudonneita meteoriitteja.</p>
+        <p>Paikkamarkkereita klikkaamalla saat lisätietoa meteoriitista.<br>
+        (Paikka, massa ja putoamisvuosi.)</p>
+        
+        <h3>Massat:</h3>
+        <ul>
+            <li><img src="icons/marker-icon-blue.png" alt=""> Alle 500 g</li>
+            <li><img src="icons/marker-icon-green.png" alt=""> 500 g - 10 kg</li>
+            <li><img src="icons/marker-icon-red.png" alt=""> Yli 10 kg</li>
+        </ul>
+
+        <h3>Datan lähde:</h3>
+        <p><a href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh/about_data" target="_blank">NASA's Open Data Portal</a></p>
+        
+
+
+    <button id="closeBox">SULJE</button>
+    </div>
+
+
+    <div class="map" id="map"></div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>

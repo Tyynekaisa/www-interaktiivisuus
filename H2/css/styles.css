@@ -1,0 +1,221 @@
+@import "https://fonts.googleapis.com/css?family=Fauna+One|Montserrat|Great+Vibes";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  
+body {
+    height: 100vh;
+    background-color: #c5d9dd;
+    text-align: center;
+    display: flex;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1010px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 400px 600px;
+    margin: auto;
+    align-items: center;
+}
+
+.rectangles {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle {
+    padding: 10px;
+    width: 400px;
+    height: 360px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.rectangle:first-child {
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+    font-size: 15px;
+    font-weight: lighter;
+    padding-bottom: 8px;
+}
+
+input {
+    width: 100px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    background-color: #99bfc6;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+    background-color: #a3c3c9;
+}
+
+.color-picker {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.red { background-color: pink; }
+.green { background-color: rgb(167, 212, 167); }
+.blue { background-color: lightskyblue; }
+.purple { background-color: rgb(200, 152, 219); }
+.orange { background-color: rgb(252, 183, 156); }
+.teal { background-color: rgb(75, 180, 180); }
+
+input[type="radio"]:checked + .color-option {
+    border: 2px solid grey;
+}
+
+
+
+
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.canvas-upper {
+    height: 515px;
+}
+
+canvas {
+    border: 1px solid lightgrey;
+    border-top: 2px dashed grey;
+    border-left: 2px dashed grey;
+    width: 578px;
+    height: 515px;
+}
+
+.canvas-bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    
+}
+
+.move-rectangles {
+    width: 300px;
+    height: 185px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+#move_btn {
+    width: 150px;
+    margin: 0;
+}
+
+.overlapping {
+    width: 240px;
+    height: 185px;
+    align-content: center;
+}
+
+.square {
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    justify-self: center;
+    border: 3px solid #99bfc6;
+    border-radius: 5px;
+}
+
+.square p {
+    color: #99bfc6;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.overlapping-message {
+    width: 180px;
+    height: 180px;
+    justify-self: center;
+    align-content: center;
+    background-color: #c5d9dd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#overlap_true, #overlap_false {
+    display: none;
+  }
+
+
+
+

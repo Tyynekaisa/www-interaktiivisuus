@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css?family=Fauna+One|Montserrat|Great+Vibes";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  
+body {
+    height: 100vh;
+    background-color: #c5d9dd;
+    text-align: center;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-size: 60px;
+  font-weight: lighter;
+  padding-top: 20px;
+  
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+svg {
+    background-color: white;
+    border-radius: 20px;
+}

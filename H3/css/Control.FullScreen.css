@@ -1,0 +1,16 @@
+.leaflet-fullscreen-icon {
+	background-image: url("../icons/icon-fullscreen.png");
+	background-size: 26px 52px;
+}
+
+.leaflet-fullscreen-icon.leaflet-fullscreen-on {
+	background-position: 0 -26px;
+}
+
+.leaflet-touch .leaflet-fullscreen-icon {
+	background-position: 2px 2px;
+}
+
+.leaflet-touch .leaflet-fullscreen-icon.leaflet-fullscreen-on {
+	background-position: 2px -24px;
+}

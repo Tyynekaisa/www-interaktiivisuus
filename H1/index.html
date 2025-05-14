@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Seikkailupeli</title>
+</head>
+<body>
+    <div id="Otsikko"><h1>Seikkailupeli</h1></div>
+    <div id="kuvaus"><p>Yksisarvinen on kadonnut ja prinsessa pulassa! <br> Auta prinsessaa voittamaan lohikäärme ja löytämään yksisarvinen.</p>
+    </div>
+    <button id="openBox">PELIOHJEET</button>
+
+    <div id="popupBox">
+        
+        <p>Tämä on tektiseikkailupeli. Pääset liikkumaan pelimaailmassa ja tekemään tehtäviä kirjoittamalla komentoja "Mitä haluat tehdä?" ruudussa.</p>
+        <p>Voit liikkua seuraavilla käskyillä:</p>
+            <p><b>Pohjoinen<br>
+            Länsi<br>
+            Etelä<br>
+            Itä<br></b>
+        </p>
+        <hr>
+
+        <p>Toiminnot:</p>
+        <p>
+        <b>Poimi + esine<br>
+        Käytä + esine<br>
+        Jätä + esine<br></b>
+        </p>
+        <hr>
+
+        <p>Vihjeen saat kirjoittamalla:</p>
+        <p><b>Vihje</b></p>
+
+
+    <button id="closeBox">SULJE</button>
+    </div>
+    
+    
+    <div class="container">
+
+        <div class="container-inner">
+
+        
+            <img id="image" src="" alt="">    
+            <input type="text" id="input" placeholder="Mitä haluat tehdä?">
+            <button id="action_btn">VASTAA</button>
+            <button id="refresh">PELAA UUDELLEEN</button>
+            <p id="output" class="output"></p>
+            <p id="itemtosee" class="itemtosee"></p>
+            <p id="backpack" class="backpack"></p>
+            <div id="winningbox">
+                <h3>Onnittelut urhea seikkailija!</h3>
+                <p>Prinsessa ja yksisarvinen ovat jälleen yhdessä, kiitos sinun nokkeluutesi ja rohkeutesi.</p>
+                <p>Taikamaailma kiittää sinua, ja legendasi elää ikuisesti!</p>
+            </div>
+            
+        </div>
+    </div>
+    <p><a href="lapijuoksu.html">Läpipeluuohje opettajalle >></a></div></p>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

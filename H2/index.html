@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangles</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="rectangles">
+            <div class="rectangle">
+                <h2>Suorakulmio 1</h2>
+                <form id="rectangle1">
+                    <p>Valitse suorakulmion väri:</p>
+                    <div class="color-picker">
+                        <input type="radio" id="red" name="color1" value="pink" checked="checked">
+                        <label for="red" class="color-option red"></label>
+                    
+                        <input type="radio" id="green" name="color1" value="rgb(167, 212, 167)">
+                        <label for="green" class="color-option green"></label>
+                    
+                        <input type="radio" id="blue" name="color1" value="lightskyblue">
+                        <label for="blue" class="color-option blue"></label>
+                    </div>
+                    <p>Anna suorakulmion vasemman yläreunan koordinaatit:</p>
+                    <label for="left1"></label>
+                    <input type="number" class="left" id="left1" placeholder="X" min="0" max="500">
+                    <label for="top1"></label>
+                    <input type="number" class="top" id="top1" placeholder="Y" min="0" max="500"><br>
+                    <p>Anna suorakulmion mitat:</p>
+                    <label for="width1"></label>
+                    <input type="number" class="width" id="width1" placeholder="Leveys" min="1" max="500">
+                    <label for="height1"></label>
+                    <input type="number" class="height" id="height1" placeholder="Korkeus" min="1" max="500"><br>
+                    <input type="submit" id="input-btn1" value="PIIRRÄ SUORAKULMIO">
+                </form>
+            </div>
+
+            <div class="rectangle">
+                <h2>Suorakulmio 2</h2>
+                <form id="rectangle2">
+                    <p>Valitse suorakulmion väri:</p>
+                    <div class="color-picker">
+                        <input type="radio" id="purple" name="color2" value="rgb(200, 152, 219)" checked="checked">
+                        <label for="purple" class="color-option purple"></label>
+                    
+                        <input type="radio" id="orange" name="color2" value="rgb(252, 183, 156)">
+                        <label for="orange" class="color-option orange"></label>
+                    
+                        <input type="radio" id="teal" name="color2" value="rgb(75, 180, 180)">
+                        <label for="teal" class="color-option teal"></label>
+                    </div>
+                    <p>Anna suorakulmion vasemman yläreunan koordinaatit:</p>
+                    <label for="left2"></label>
+                    <input type="number" class="left" id="left2" placeholder="X" min="0" max="500">
+                    <label for="top2"></label>
+                    <input type="number" class="top" id="top2" placeholder="Y" min="0" max="500"><br>
+                    <p>Anna suorakulmion mitat:</p>
+                    <label for="width2"></label>
+                    <input type="number" class="width" id="width2" placeholder="Leveys" min="1" max="500">
+                    <label for="height2"></label>
+                    <input type="number" class="height" id="height2" placeholder="Korkeus" min="1" max="500"><br>
+                    <input type="submit" id="input-btn2" value="PIIRRÄ SUORAKULMIO">
+                </form>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <div class="canvas-upper" id="canvas">
+                <canvas id="c"></canvas>
+            </div>
+
+            <div class="canvas-bottom">
+                <div class="move-rectangles">
+                    <h2>Siirrä suorakulmiota</h2>
+                    <p>Anna arvot suorakulmion 2 siirrolle.<br>
+                        Siirtosuunta voi olla myös negatiivinen.
+                        
+                    </p>
+                    <form id="movingform">
+                        <label for="left2_new"></label>
+                        <input type="number" class="left" id="left2_new" placeholder="X">
+                        <label for="top2_new"></label>
+                        <input type="number" class="top" id="top2_new" placeholder="Y"><br>
+                        <input type="submit" id="move_btn" value="SIIRRÄ">
+                    </form>
+                </div>
+
+                <div class="overlapping">
+                    <div class="square"><p>?</p></div>
+                    <div class="overlapping-message" id="overlap_true"><h3>suorakulmiot ovat päällekkäin</h3></div>
+                    <div class="overlapping-message" id="overlap_false"><h3>suorakulmiot eivät ole päällekkäin</h3></div>
+
+                </div>
+            </div>
+        
+
+        </div>
+
+    </div>
+    
+    <script src="js/main.js" type="module"></script>
+    
+</body>
+</html>

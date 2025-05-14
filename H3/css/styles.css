@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css?family=Fauna+One|Montserrat|Great+Vibes";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  
+body {
+    height: 100vh;
+    background-color: #c5d9dd;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+#popupBox {
+    width: 500px;
+    padding: 10px;
+    background-color: white;
+    color: grey;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 210px;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#popupBox.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+button {
+    background-color: #99bfc6;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+#openBox, #closeBox {
+    margin: 20px 0 0;
+    padding: 8px 10px;
+}
+
+ul {
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    color: grey;
+    padding-bottom: 10px;
+    
+}
+
+ul img {
+    height: 18px;
+}
+
+.map {
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.leaflet-popup-content {
+    text-align: center;
+}

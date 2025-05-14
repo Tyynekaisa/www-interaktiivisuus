@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Seikkailupeli</title>
+</head>
+<body>
+    <div id="Otsikko"><h1>Seikkailupeli</h1></div>
+    <div id="kuvaus"><p>Yksisarvinen on kadonnut ja prinsessa pulassa! <br> Auta prinsessaa voittamaan lohikäärme ja löytämään yksisarvinen.</p>
+    </div>
+    <button id="openBox">PELIOHJEET</button>
+
+    <div id="popupBox">
+        
+        <p>Tämä on tektiseikkailupeli. Pääset liikkumaan pelimaailmassa ja tekemään tehtäviä kirjoittamalla komentoja "Mitä haluat tehdä?" ruudussa.</p>
+        <p>Voit liikkua seuraavilla käskyillä:</p>
+            <p><b>Pohjoinen<br>
+            Länsi<br>
+            Etelä<br>
+            Itä<br></b>
+        </p>
+        <hr>
+
+        <p>Toiminnot:</p>
+        <p>
+        <b>Poimi + esine<br>
+        Käytä + esine<br>
+        Jätä + esine<br></b>
+        </p>
+        <hr>
+
+        <p>Vihjeen saat kirjoittamalla:</p>
+        <p><b>Vihje</b></p>
+
+
+    <button id="closeBox">SULJE</button>
+    </div>
+    
+    
+    <div class="container">
+
+        <div id="teacher"><p>Ohjeet pelin läpijuoksuun. Vain opettajan käyttöön.</p></div>
+
+        <div class="container-passwd" id="container-passwd">
+            <div id="password-form">
+                <p>Salasana on kurssikoodi.</p>
+                <input type="password" id="password" placeholder="Anna salasana">
+                <button id="passwd_btn" onclick="checkPassword()">OK</button>
+                <p id="error-message" style="color: red; display: none;">Väärä salasana!</p>
+            </div>
+        </div>
+
+        
+        
+        <div class="container-inner" id="runthrough-box">
+
+            
+            
+            <div class="runtrough-box-inner">
+                <p>Peliohjeet löytyvät klikkaamalla "Peliohjeet" linkkiä. Kirjoittamalla "vihje" saa vihjeen mitä missäkin ruudussa voisi tapahtua. Vihjeet muuttuvat pelin edetessä.</p>
+                </p><br>
+                <p>Läpijuoksu:</p>
+                <ol>
+                    <li>Mene joelle ja poimi kivi.</li>
+                    <li>Mene kaivolle ja heitä kivi kaivoon. Poimi mukaasi huilu.</li>
+                    <li>Mene linnatornille ja soita huilua. Poimi glittermaali.</li>
+                    <li>Mene vanhan penkin luokse ja maalaa penkki.</li>
+                    <li>Soita huilua trubaduurin kanssa ja saat sävelen.</li>
+                    <li>Mene lohikäärmeen luokse. Soita huilua.</li>
+                    <li>Lohikäärme nukahtaa. Poimi avain.</li>
+                    <li>Mene mökille ja avaa ovi avaimella.</li>
+                    <li>Mökin pöydällä on taikasauva. Poimi taikasauva.</li>
+                    <li>Mene portille ja käytä taikasauvaa. Portti avautuu.</li>
+                    <li>Mene portista (itään) ja pääset yksisarvisen luokse.</li>
+                </ol>
+                
+            </div>
+        </div>
+    </div>
+
+    <p><a href="index.html"><< Takaisin peliin</a></div></p>
+
+    <script>
+        function checkPassword() {
+            const correctPassword = "AT00BT79-3015"; // Kurssikoodi
+            const userInput = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+            const runthroughBox = document.getElementById("runthrough-box");
+
+            if (userInput === correctPassword) {
+                runthroughBox.style.display = "block";
+                document.getElementById("container-passwd").style.display = "none";
+            } else {
+                errorMessage.style.display = "block";
+            }
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
