@@ -6,5 +6,5 @@ Kurssi: AT00BT79-3015 WWW-interaktiivisuus
 - H2: [Suorakulmioiden piirtäminen (JavaScript OOP Demo)](https://tyynekaisa.github.io/www-interaktiivisuus/H2/index.html)
 - H3: [Meteoriitit kartalla (Api Fetch Open Data)](https://tyynekaisa.github.io/www-interaktiivisuus/H3/index.html)
 - H4: [Datan visualisointi (D3js)](https://tyynekaisa.github.io/www-interaktiivisuus/H4/index.html)
-- Ekstra: [Numeroarvauspeli](https://tyynekaisa.github.io/WWWinteraktiivisuus/Numeroarvauspeli/index.html)
+- Ekstra: [Numeroarvauspeli](https://tyynekaisa.github.io/www-interaktiivisuus/Numeroarvauspeli/index.html)
 - Ekstra: [Pong](https://tyynekaisa.github.io/www-interaktiivisuus/Pong/index.html)
